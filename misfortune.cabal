@@ -6,9 +6,9 @@ cabal-version:          >= 1.8
 build-type:             Simple
 
 author:                 James Cook <mokus@deepbondi.net>
-maintainer:             James Cook <mokus@deepbondi.net>
+maintainer:             Naïm Favier <n@monade.li>
 license:                PublicDomain
-homepage:               https://github.com/mokus0/misfortune
+homepage:               https://github.com/ncfavier/misfortune
 
 category:               Console, Game
 synopsis:               fortune-mod clone
@@ -20,7 +20,8 @@ tested-with:            GHC == 7.0.4,
                         GHC == 7.6.3,
                         GHC == 7.8.4,
                         GHC == 7.10.1,
-                        GHC == 7.11
+                        GHC == 7.11,
+                        GHC == 9.0.2
 
 data-files:             README.md
                         README.fortune-mod.md
@@ -105,7 +106,7 @@ data-files:             README.md
 
 source-repository head
   type:                 git
-  location:             https://github.com/mokus0/misfortune.git
+  location:             https://github.com/ncfavier/misfortune
 
 Library
   hs-source-dirs:       src
@@ -130,9 +131,6 @@ Library
   if impl(ghc == 7.0.*)
     -- utf8-string-1.0.1 does not build on GHC 7.0.x
     build-depends:      utf8-string == 1
-  if impl(ghc >= 7.10)
-    -- random-fu < 0.2.6.2 won't build on GHC 7.10
-    build-depends:      random-fu >= 0.2.6.2
 
 Executable misfortune
   hs-source-dirs:       src
