@@ -2,7 +2,6 @@
 {-# LANGUAGE FlexibleContexts #-}
 module Main (main) where
 
-import Control.Applicative
 import Control.Monad
 import Control.Monad.Loops
 import Data.Either

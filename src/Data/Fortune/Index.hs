@@ -54,12 +54,10 @@ module Data.Fortune.Index
      , rebuildStats
      ) where
 
-import Control.Applicative
 import Control.Concurrent.MVar
 import Control.Exception
 import Control.Monad
 import qualified Data.ByteString as BS
-import Data.Foldable (foldMap)
 import Data.Fortune.Stats
 import Data.Knob
 import Data.Maybe

@@ -48,7 +48,6 @@ import Data.Fortune.FortuneFile
 import Data.Fortune.Index
 import qualified Data.Fortune.Stats as S
 
-import Control.Applicative
 import Control.Exception
 import Control.Monad
 import Data.Char
