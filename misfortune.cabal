@@ -1,6 +1,6 @@
 cabal-version:          3.0
 name:                   misfortune
-version:                0.1.2
+version:                0.1.2.1
 stability:              experimental
 
 author:                 James Cook <mokus@deepbondi.net>
