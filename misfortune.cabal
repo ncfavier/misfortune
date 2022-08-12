@@ -143,3 +143,8 @@ executable misfortune
   build-depends:        monad-loops,
                         regex-base,
                         regex-pcre
+
+executable misfortune-strfile
+  import:               main
+  main-is:              StrFile.hs
+  other-modules:        Data.Fortune
